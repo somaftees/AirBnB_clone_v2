@@ -19,7 +19,7 @@ def hbnb():
 
 @app.route('/c/<text>', strict_slashes=False)
 def cisfun(text):
-    """c is fun haha"""
+    """c is fun"""
     return 'C ' + text.replace('_', ' ')
 
 
@@ -29,9 +29,10 @@ def pythoniscool(text='is cool'):
     """python is cool"""
     return 'Python ' + text.replace('_', ' ')
 
+
 @app.route('/number/<int:n>', strict_slashes=False)
 def imanumber(n):
-    """display “n is a number” only if n is an integer"""
+    """im a number"""
     return "{:d} is a number".format(n)
 
 if __name__ == '__main__':
