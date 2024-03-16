@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" flask app """
+""" flask app"""
 from flask import Flask, render_template
 
 app = Flask("__name__")
